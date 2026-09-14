@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Jasper Fernandez - Full-Stack Developer</title>
+  <meta name="description" content="Full-Stack Developer building practical, reliable systems. Currently exploring AI Engineering and Cybersecurity.">
+  <meta name="author" content="Jasper">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jasper — Full-Stack Developer">
+  <meta property="og:description" content="Full-Stack Developer building practical, reliable systems. Currently exploring AI Engineering and Cybersecurity.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/jpeg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- JS (deferred) -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================
+       HEADER
+       ======================================== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="#" class="site-logo" aria-label="Jasper — Home"><span style="color: var(--color-accent); opacity: 0.5;">// </span>jasperfernandez</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 nav-toggle__menu" aria-hidden="true">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x nav-toggle__close" aria-hidden="true">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+        <ul class="site-nav__list" id="nav-list" role="list">
+          <li><a href="#about" class="site-nav__link">About</a></li>
+          <li><a href="#projects" class="site-nav__link">Projects</a></li>
+          <li><a href="#experience" class="site-nav__link">Experience</a></li>
+          <li><a href="#skills" class="site-nav__link">Stack</a></li>
+          <li><a href="#education" class="site-nav__link">Education</a></li>
+          <li><a href="#certifications" class="site-nav__link">Certifications</a></li>
+          <li><a href="#contact" class="site-nav__link">Contact</a></li>
+          <li class="site-nav__separator" aria-hidden="true"></li>
+          <li>
+            <a href="https://github.com/jasperfernandez" target="_blank" rel="noopener noreferrer" class="site-nav__link" aria-label="GitHub profile">
+              GitHub
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#898479"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M17 7l-10 10" />
+                <path d="M8 7l9 0l0 9" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/fernandezjasper" target="_blank" rel="noopener noreferrer" class="site-nav__link" aria-label="LinkedIn profile">
+              LinkedIn
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#898479"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M17 7l-10 10" />
+                <path d="M8 7l9 0l0 9" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- ========================================
+       MAIN CONTENT
+       ======================================== -->
+  <main id="main">
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero__grid">
+        <div class="hero__content">
+          <p class="hero__label">
+            <span class="blink" aria-hidden="true"></span>
+            Full-Stack Developer
+          </p>
+
+          <h1 class="hero__title">
+            I build systems<br>that <em>work</em>.
+          </h1>
+
+          <p class="hero__description">
+            Practical, reliable full-stack development — from databases to interfaces.
+            Currently exploring AI engineering and cybersecurity, because good systems
+            need to be smart and secure.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              View my work
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12l14 0" />
+                <path d="M13 18l6 -6" />
+                <path d="M13 6l6 6" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--secondary">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero__photo">
+          <img src="me.png" alt="Photo of Jasper Fernandez" class="hero__photo-img" loading="eager" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">About</p>
+          <h2 class="section-title" id="about-title">A bit of context.</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm a <strong>full-stack developer</strong> who focuses on building things that actually work well.
+              Not the flashiest or most trendy approach — just clean architecture, clear code,
+              and systems that hold up under real usage.
+            </p>
+            <p>
+              Most of my work involves designing and building web applications end-to-end:
+              data modeling, API design, server-side logic, and the interfaces people use every day.
+              I care about maintainability because I've inherited enough codebases to know what happens
+              when nobody does.
+            </p>
+            <p>
+              Outside of my core work, I'm spending time learning about <strong>AI engineering</strong> —
+              understanding how to integrate machine learning into practical applications — and
+              <strong>cybersecurity</strong>, because building reliable systems means understanding how they break.
+              Neither is my specialty yet, but both are shaping how I think about software.
+            </p>
+          </div>
+
+          <aside class="about__sidebar reveal" aria-label="Quick facts">
+            <h3 class="about__sidebar-title">Quick Facts</h3>
+
+            <div class="about__detail">
+              <span class="about__detail-label">Focus</span>
+              <span class="about__detail-value">Full-Stack Development</span>
+            </div>
+            <div class="about__detail">
+              <span class="about__detail-label">Experience</span>
+              <span class="about__detail-value">2+ Years</span>
+            </div>
+            <div class="about__detail">
+              <span class="about__detail-label">Currently</span>
+              <span class="about__detail-value">Open to opportunities</span>
+            </div>
+            <div class="about__detail">
+              <span class="about__detail-label">Exploring</span>
+              <span class="about__detail-value">AI &amp; Cybersecurity</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title" id="projects-title">Things I've built.</h2>
+          <p class="section-intro">
+            A few projects that represent the kind of work I do. Each one involved
+            real problems, real constraints, and real decisions.
+          </p>
+        </div>
+
+        <div class="project-list">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-card__visual">
+              <span class="project-card__visual-label">Project Preview</span>
+            </div>
+            <div class="project-card__info">
+              <p class="project-card__number">01</p>
+              <h3 class="project-card__title">NEMSU Student Information System (SIS)</h3>
+              <p class="project-card__description">
+                A task management REST API with role-based access control,
+                real-time WebSocket updates, and automated scheduling.
+                Built to handle concurrent users without falling over.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">Inertia.js</span>
+                <span class="tag">Redis</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://sis.nemsu.edu.ph" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                  Live Demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M17 7l-10 10" />
+                    <path d="M8 7l9 0l0 9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-card__visual">
+              <span class="project-card__visual-label">Project Preview</span>
+            </div>
+            <div class="project-card__info">
+              <p class="project-card__number">02</p>
+              <h3 class="project-card__title">JELMAXX Inventory Management System</h3>
+              <p class="project-card__description">
+                An internal dashboard for monitoring application health, server metrics,
+                and deployment status. Aggregates data from multiple sources into
+                one view that actually gets used.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">Inertia.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-card__visual">
+              <span class="project-card__visual-label">Project Preview</span>
+            </div>
+            <div class="project-card__info">
+              <p class="project-card__number">03</p>
+              <h3 class="project-card__title">NEMSU E-Vote</h3>
+              <p class="project-card__description">
+                A password manager with end-to-end encryption, zero-knowledge architecture,
+                and browser extension support. My first deep dive into applied cryptography
+                and security-focused design.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">Bloc</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github" aria-hidden="true">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                  </svg>
+                  Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== EXPERIENCE ======== -->
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Experience</p>
+          <h2 class="section-title" id="experience-title">Where I've worked.</h2>
+        </div>
+
+        <div class="experience-list">
+
+          <div class="experience-item reveal">
+            <div class="experience-item__date">Aug 2025 — Present</div>
+            <div>
+              <h3 class="experience-item__role">Computer Programmer I</h3>
+              <p class="experience-item__company">NEMSU Tandag</p>
+              <p class="experience-item__description">
+                Developed a comprehensive Student Information System (SIS) that digitizes admissions, enrollment, curriculum, assessment, student records, and faculty evaluation.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item reveal">
+            <div class="experience-item__date">2024 — 2025</div>
+            <div>
+              <h3 class="experience-item__role">Full-Stack Developer</h3>
+              <p class="experience-item__company">Freelance</p>
+              <p class="experience-item__description">
+                Built websites and small web applications for local businesses.
+                Handled everything from client communication to deployment. Learned fast
+                that "working" and "done" are not the same thing.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item reveal">
+            <div class="experience-item__date">Jul 2023 - Apr 2023</div>
+            <div>
+              <h3 class="experience-item__role">Web Developer (OJT)</h3>
+              <p class="experience-item__company">NEMSU Tandag</p>
+              <p class="experience-item__description">
+                Contributed to a SaaS platform handling scheduling and client management.
+                Built RESTful APIs, implemented authentication flows, and helped migrate
+                the frontend from jQuery to a modern component-based architecture.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TECH STACK ======== -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Tech Stack</p>
+          <h2 class="section-title" id="skills-title">What I work with.</h2>
+        </div>
+
+        <div class="skills-grid reveal-group">
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="skill-group__list">
+              <li class="skill-group__item">JavaScript</li>
+              <li class="skill-group__item">TypeScript</li>
+              <li class="skill-group__item">Vue.js</li>
+              <li class="skill-group__item">React.js</li>
+              <li class="skill-group__item">Inertia.js</li>
+              <li class="skill-group__item">Tailwind CSS</li>
+              <li class="skill-group__item">Vite</li>
+              <li class="skill-group__item">ESLint</li>
+              <li class="skill-group__item">Prettier</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Backend</h3>
+            <ul class="skill-group__list">
+              <li class="skill-group__item">PHP</li>
+              <li class="skill-group__item">Laravel</li>
+              <li class="skill-group__item">Python</li>
+              <li class="skill-group__item">Java</li>
+              <li class="skill-group__item">Websockets</li>
+              <li class="skill-group__item">Redis</li>
+              <li class="skill-group__item">MySQL</li>
+              <li class="skill-group__item">REST API Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Mobile</h3>
+            <ul class="skill-group__list">
+              <li class="skill-group__item">Dart</li>
+              <li class="skill-group__item">Flutter</li>
+              <li class="skill-group__item">Bloc</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">DevOps &amp; Cloud</h3>
+            <ul class="skill-group__list">
+              <li class="skill-group__item">Github Actions</li>
+              <li class="skill-group__item">Docker</li>
+              <li class="skill-group__item">Linux</li>
+              <li class="skill-group__item">Digital Ocean</li>
+              <li class="skill-group__item">AWS</li>
+            </ul>
+          </div>
+
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">AI &amp; Machine Learning</h3>
+            <ul class="skill-group__list">
+              <li class="skill-group__item">OpenAI</li>
+              <li class="skill-group__item">LangChain</li>
+              <li class="skill-group__item">Hugging Face</li>
+              <li class="skill-group__item">LLamaIndex</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Developer Tools</h3>
+            <ul class="skill-group__list">
+              <li class="skill-group__item">Git</li>
+              <li class="skill-group__item">GitHub</li>
+              <li class="skill-group__item">PhpStorm</li>
+              <li class="skill-group__item">VS Code</li>
+              <li class="skill-group__item">Android Studio</li>
+              <li class="skill-group__item">Antigravity</li>
+              <li class="skill-group__item">Trello</li>
+              <li class="skill-group__item">Slack</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== EDUCATION ======== -->
+    <section id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Education</p>
+          <h2 class="section-title" id="education-title">Where I studied.</h2>
+        </div>
+
+        <div class="experience-list">
+
+          <div class="experience-item reveal">
+            <div class="experience-item__date">2026 — Present</div>
+            <div>
+              <h3 class="experience-item__role">Master of Science in Computer Science</h3>
+              <p class="experience-item__company">NEMSU Graduate School, Tandag</p>
+              <p class="experience-item__description">
+                Currently pursuing graduate studies focused on deepening expertise in
+                computer science theory and applied research.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item reveal">
+            <div class="experience-item__date">2020 — 2024</div>
+            <div>
+              <h3 class="experience-item__role">Bachelor of Science in Computer Science</h3>
+              <p class="experience-item__company">NEMSU Tandag</p>
+              <p class="experience-item__description">
+                Completed undergraduate studies in Computer Science with recognition
+                for academic and extracurricular contributions.
+              </p>
+              <ul class="education-awards" style="margin-top: var(--space-sm);">
+                <li class="education-award">Academic Performance Award</li>
+                <li class="education-award">Special Talent Award</li>
+                <li class="education-award">Service Award</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CERTIFICATIONS ======== -->
+    <section class="certifications" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Certifications &amp; Trainings</p>
+          <h2 class="section-title" id="certifications-title">Verified skills.</h2>
+        </div>
+
+        <div class="cert-grid reveal-group">
+
+          <article class="cert-card reveal">
+            <div class="cert-card__header">
+              <h3 class="cert-card__title">Associate AI Engineer</h3>
+              <span class="cert-card__date">2026</span>
+            </div>
+            <p class="cert-card__issuer">DataCamp</p>
+            <div class="cert-card__tags">
+              <span class="tag">AI Engineering</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Prompt Engineering</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__header">
+              <h3 class="cert-card__title">Ethical Hacker</h3>
+              <span class="cert-card__date">2026</span>
+            </div>
+            <p class="cert-card__issuer">CISCO Networking Academy</p>
+            <div class="cert-card__tags">
+              <span class="tag">Ethical Hacking</span>
+              <span class="tag">Cybersecurity</span>
+              <span class="tag">Vulnerability Assessment</span>
+              <span class="tag">Penetration Testing</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__header">
+              <h3 class="cert-card__title">GCI World - Global Consumer Intelligence</h3>
+              <span class="cert-card__date">2026</span>
+            </div>
+            <p class="cert-card__issuer">Matsuo-Iwasawa Laboratory, The University of Tokyo</p>
+            <div class="cert-card__tags">
+              <span class="tag">Data Science</span>
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Business Data Analytics</span>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__header">
+              <h3 class="cert-card__title">Omada Certified Network Administrator (OCNA) Wireless</h3>
+              <span class="cert-card__date">2025</span>
+            </div>
+            <p class="cert-card__issuer">TP-Link Systems Inc.</p>
+            <div class="cert-card__tags">
+              <span class="tag">Wireless Networking</span>
+              <span class="tag">Network Administration</span>
+              <span class="tag">Omada SDN</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Contact</p>
+          <h2 class="section-title" id="contact-title">Let's talk.</h2>
+        </div>
+
+        <div class="contact__inner reveal">
+          <p class="contact__text">
+            I'm open to new opportunities, interesting projects, and conversations
+            about building good software. If you've got something in mind, reach out.
+          </p>
+
+          <a href="mailto:iasperfernandez@gmail.com" class="contact__email">
+            iasperfernandez@gmail.com
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#898479"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </a>
+
+          <div class="contact__socials">
+            <a href="https://github.com/jasperfernandez" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/fernandezjasper" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                <path d="M8 11l0 5" />
+                <path d="M8 8l0 .01" />
+                <path d="M12 16l0 -5" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+                <path d="M13 11l1.5 6l1.5 -6" />
+              </svg>
+              Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="site-footer__copy">
+        &copy; <span data-year></span> jasperfernandez
+      </p>
+      <div class="site-footer__links">
+        <a href="https://github.com/jasperfernandez" target="_blank" rel="noopener noreferrer">
+          GitHub
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#898479"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M17 7l-10 10" />
+            <path d="M8 7l9 0l0 9" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/fernandezjasper" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#898479"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M17 7l-10 10" />
+            <path d="M8 7l9 0l0 9" />
+          </svg>
+        </a>
+        <a href="#hero">
+          Back to top
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#607d8b"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 5v6m0 3v1.5m0 3v.5" />
+            <path d="M18 11l-6 -6" />
+            <path d="M6 11l6 -6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
