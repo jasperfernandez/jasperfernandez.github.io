@@ -80,9 +80,9 @@
    ============================================= */
 
 .hero {
-  height: 100vh;
-  height: 100dvh;
-  min-height: 38rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: max(100svh, 38rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +147,7 @@
   width: 100%;
   max-width: 25rem;
   max-height: min(62vh, 460px);
-  max-height: min(62dvh, 460px);
+  max-height: min(62svh, 460px);
   height: auto;
   object-fit: contain;
   display: block;
@@ -277,12 +277,11 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 100vh;
-    height: 100dvh;
-    min-height: 0;
-    max-height: 100dvh;
+    min-height: 100vh;
+    min-height: 100svh;
+    height: auto;
     padding-top: calc(var(--space-xs) + 2.5rem);
-    padding-bottom: clamp(0.5rem, 1.5dvh, 1rem);
+    padding-bottom: clamp(0.5rem, 1.5svh, 1rem);
     justify-content: center;
     box-sizing: border-box;
     overflow: hidden;
@@ -290,7 +289,7 @@
 
   .hero__grid {
     grid-template-columns: 1fr;
-    gap: clamp(0.4rem, 1.5dvh, 0.85rem);
+    gap: clamp(0.4rem, 1.5svh, 0.85rem);
   }
 
   .hero__photo {
@@ -300,26 +299,26 @@
   }
 
   .hero__photo-img {
-    height: clamp(17.5rem, 45dvh, 26rem);
+    height: clamp(17.5rem, 45svh, 26rem);
     width: auto;
     max-width: min(90vw, 24rem);
     object-fit: contain;
   }
 
   .hero__label {
-    margin-bottom: clamp(0.2rem, 0.6dvh, 0.35rem);
+    margin-bottom: clamp(0.2rem, 0.6svh, 0.35rem);
   }
 
   .hero__title {
     font-size: clamp(1.65rem, 5vw, 2.15rem);
     line-height: 1.15;
-    margin-bottom: clamp(0.25rem, 0.7dvh, 0.5rem);
+    margin-bottom: clamp(0.25rem, 0.7svh, 0.5rem);
   }
 
   .hero__description {
     font-size: clamp(0.8125rem, 0.8rem + 0.1vw, 0.9rem);
     line-height: 1.4;
-    margin-bottom: clamp(0.6rem, 1.5dvh, 1rem);
+    margin-bottom: clamp(0.6rem, 1.5svh, 1rem);
   }
 
   .hero__actions {
@@ -342,7 +341,8 @@
 @media (max-width: 768px) and (max-height: 520px) {
   .hero {
     height: auto;
-    min-height: 100dvh;
+    min-height: 100vh;
+    min-height: 100svh;
     max-height: none;
     overflow: visible;
     padding-top: calc(var(--space-md) + 3.5rem);
