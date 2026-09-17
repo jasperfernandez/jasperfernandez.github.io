@@ -98,9 +98,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, var(--color-border) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--color-border-light) 1.25px, transparent 1.25px);
   background-size: 24px 24px;
-  opacity: 0.4;
+  opacity: 0.85;
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   pointer-events: none;
 }
 
@@ -429,14 +431,17 @@
   border-top: var(--border-thin);
   border-bottom: var(--border-thin);
   position: relative;
+  overflow: hidden;
 }
 
-/* Subtle noise texture */
+/* Subtle radial glow accents */
 .projects::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background: 
+    radial-gradient(ellipse 60% 40% at 85% 20%, rgba(212, 168, 67, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 45% at 15% 75%, rgba(212, 168, 67, 0.05) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -622,12 +627,73 @@
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   color: var(--color-accent);
+}
+
+.experience-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs) var(--space-sm);
   margin-bottom: var(--space-xs);
+}
+
+.experience-item__location {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.experience-item__location::before {
+  content: "•";
+  color: var(--color-border-hover);
+  margin-right: 0.2rem;
 }
 
 .experience-item__description {
   font-size: var(--text-sm);
   line-height: 1.7;
+}
+
+.experience-item__list {
+  margin-top: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.experience-item__list li {
+  position: relative;
+  padding-left: 1.35rem;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.experience-item__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-accent);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 18l6 -6l-6 -6v12' /%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 18l6 -6l-6 -6v12' /%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  flex-shrink: 0;
+}
+
+.experience-item__list strong {
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -680,10 +746,19 @@
 }
 
 .skill-group__item::before {
-  content: "›";
-  color: var(--color-accent);
-  font-family: var(--font-mono);
-  font-weight: 700;
+  content: "";
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: var(--color-accent);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 18l6 -6l-6 -6v12' /%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 18l6 -6l-6 -6v12' /%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
   flex-shrink: 0;
 }
 
@@ -708,9 +783,19 @@
 }
 
 .education-award::before {
-  content: "›";
-  color: var(--color-accent);
-  font-weight: 700;
+  content: "";
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: var(--color-accent);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 18l6 -6l-6 -6v12' /%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 18l6 -6l-6 -6v12' /%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
   flex-shrink: 0;
 }
 
@@ -722,12 +807,27 @@
   background-color: var(--color-surface);
   border-top: var(--border-thin);
   border-bottom: var(--border-thin);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle radial glow accents */
+.certifications::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 65% 50% at 50% 10%, rgba(212, 168, 67, 0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 85% 90%, rgba(212, 168, 67, 0.04) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
   gap: var(--space-md);
+  position: relative;
+  z-index: 1;
 }
 
 .cert-card {
